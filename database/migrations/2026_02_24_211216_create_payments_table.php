@@ -17,7 +17,7 @@ return new class extends Migration
         $table->id();
         $table->foreignId('student_id')->constrained()->cascadeOnDelete();
         $table->decimal('amount', 8, 2);
-        $table->string('month'); // January, February...
+        $table->string('month'); 
         $table->integer('year');
         $table->timestamp('payment_date')->nullable();
         $table->enum('status', ['paid', 'unpaid'])->default('unpaid');

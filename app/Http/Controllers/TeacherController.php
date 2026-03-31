@@ -13,8 +13,7 @@ class TeacherController extends Controller
     {
         $query = Teacher::query();
 
-        // 🔎 Search by name or phone
-        if ($request->filled('search')) {
+    if ($request->filled('search')) {
     $search = $request->search;
     $query->where(function ($q) use ($search) {
         $q->where('first_name', 'like', "%$search%")
@@ -23,7 +22,6 @@ class TeacherController extends Controller
     });
 }
 
-        // 🎓 Filter by subject
         if ($request->filled('subject')) {
             $query->where('subject_specialization', $request->subject);
         }
@@ -69,7 +67,6 @@ class TeacherController extends Controller
         return redirect()->route('teachers.index')->with('success', 'Teacher removed successfully.');
     }
 
-    // 📄 Export PDF
     public function exportPdf()
     {
         $teachers = Teacher::withCount('groups')->get();

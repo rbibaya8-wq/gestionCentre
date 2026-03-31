@@ -6,7 +6,6 @@
 
     <div class="row">
 
-        <!-- Monthly Revenue -->
         <div class="col-md-3 mb-4">
             <div class="card text-white bg-success shadow">
                 <div class="card-body">
@@ -16,7 +15,6 @@
             </div>
         </div>
 
-        <!-- Unpaid Students -->
         <div class="col-md-3 mb-4">
             <div class="card text-white bg-danger shadow">
                 <div class="card-body">
@@ -26,7 +24,6 @@
             </div>
         </div>
 
-        <!-- Total Students -->
         <div class="col-md-3 mb-4">
             <div class="card text-white bg-primary shadow">
                 <div class="card-body">
@@ -36,7 +33,6 @@
             </div>
         </div>
 
-        <!-- Total Teachers -->
         <div class="col-md-3 mb-4">
             <div class="card text-white bg-info shadow">
                 <div class="card-body">
@@ -48,7 +44,6 @@
 
     </div>
 
-    <!-- Payment Progress -->
     <div class="card mb-4 shadow">
         <div class="card-body">
             <h5>Payment Rate This Month</h5>
@@ -61,7 +56,6 @@
         </div>
     </div>
 
-    <!-- Latest Payments -->
     <div class="card shadow">
         <div class="card-body">
             <h5>Latest Payments</h5>

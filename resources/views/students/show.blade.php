@@ -7,7 +7,6 @@
 <div class="card mb-4">
     <div class="card-body">
         <h4>{{ $student->first_name }} {{ $student->last_name }}</h4>
-        <p><strong>Email:</strong> {{ $student->email }}</p>
         <p><strong>Phone:</strong> {{ $student->phone }}</p>
         <p><strong>Level:</strong> {{ $student->level }}</p>
 

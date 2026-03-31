@@ -43,9 +43,9 @@ class DashboardController extends Controller
         ->take(5)
         ->get();
     $groups = Group::withCount('students')->get();
-$totalStudents = Student::count();            
-$totalGroups = Group::count();               
-$studentsWithGroup = Student::whereNotNull('group_id')->count();
+    $totalStudents = Student::count();            
+    $totalGroups = Group::count();               
+    $studentsWithGroup = Student::whereNotNull('group_id')->count();
 
     return view('dashboard', compact(
         'monthlyRevenue',
